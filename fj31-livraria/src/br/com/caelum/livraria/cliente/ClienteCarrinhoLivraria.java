@@ -15,7 +15,7 @@ public class ClienteCarrinhoLivraria {
 	 */
 	public static void main(String[] args) throws NamingException {
 		InitialContext ic = new InitialContext();
-		Carrinho carrinho = (Carrinho) ic.lookup("ejb:/livraria/"+"CarrinhoBean!br.com.caelum.livraria.ejb.Carrinho?stateful");
+		Carrinho carrinho = (Carrinho) ic.lookup("ejb:/livraria/CarrinhoBean!br.com.caelum.livraria.ejb.Carrinho?stateful");
 		
 		Livro livro = new Livro();
 		livro.setNome("Alice no País das Maravilhas");
